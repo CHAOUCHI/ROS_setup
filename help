@@ -1,0 +1,32 @@
+NAME
+       setup.bash - setup the ROS configuration
+
+SYNOPSIS
+       setup.bash -h|--help
+       setup.bash [-v|--verbose] [-d|--domain <ROS_DOMAIN_ID>] [-l|--localhost-only <ROS_LOCALHOST_ONLY>]
+
+DESCRIPTION
+       	Sets everything up so the terminal in which setup.bash is executed is property configured for using ROS (Robot Operating System).
+       	if -d or -l options are unspecified, ROS environment variables will take default values :
+       		ROS_DOMAIN_ID = 0
+       		ROS_LOCALHOST_ONLY = 1
+
+OPTIONS
+	-h --help
+		Displays this help.
+		
+       	-v --verbose
+       		Displays more informations about this program, and what is does step by step.
+       		
+	-d --domain
+		Sets ROS_DOMAIN_ID. ROS_DOMAIN_ID must be an integer between 0 and 101 included.
+		
+	-l --localhost-only
+		Sets the boolean ROS_LOCALHOST_ONLY to True(1) or False(0). This value must be an integer : either 0 or 1.
+		
+DIAGNOSTICS
+	setup.bash returns nothing SUCCESS(0) in case of normal execution and FAILURE(1) if something went wrong.
+	
+AUTHOR
+	Amazir CHAOUCHI (amazir.chaouchi@gmail.com)
+
