@@ -15,7 +15,7 @@ Then, verify that ROS environment variables are successfully set with the correc
 
 ## Purpose of this script
 
-Doing this is a **loss of time**. That's why I wrote this simple script that does all this actions.
+Doing these is a **loss of time**. That's why I wrote this simple script that does all this actions.
 
 ## Syntax
 - `setup.bash -h|--help`
